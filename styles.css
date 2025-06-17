@@ -27,11 +27,14 @@ header {
   justify-content: space-between;
   padding: 10px;
 }
+.logo {
+  flex: 1;
+}
 .nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
+  flex: 2;
 }
 .nav-links a {
   text-decoration: none;
@@ -48,7 +51,6 @@ header {
 .menu-toggle {
   display: none;
 }
-
 .nav-buttons button {
   background-color: transparent;
   color: var(--color-pri);
