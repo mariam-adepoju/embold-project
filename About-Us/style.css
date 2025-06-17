@@ -3,13 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI',"DM Sans", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
     line-height: 1.6;
     color: #fff;
-    background-color: #f8f9fa;
+    background-color: #f0f4fb;;
 }
 
 /* Header Styles */
@@ -18,7 +18,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: #ebeaea;
+    background-color: #f0f4fb;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -31,6 +31,12 @@ nav a {
     font-weight: 500;
     color: #333;
     text-decoration: none;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+}
+
+nav a:hover {
+    color:#196cc5;
 }
 
 .auth-buttons {
@@ -39,29 +45,38 @@ nav a {
 }
 
 .signup-btn, .login-btn {
-    padding: 8px 20px;
+    padding: 5px 15px;
     border-radius: 4px;
     font-weight: 500;
     text-decoration: none;
 }
 
 .signup-btn {
-     background-color: transparent;
-    color: #2a7fba;
-    border: 1px solid #2a7fba;
+    background-color: transparent;
+    color: #196cc5;
+    border: 1px solid #196cc5;
 }
 
 .login-btn {
-    background-color: green;
-    color: white;
-    border: 1px solid #2a7fba;
+    background-color: transparent;
+    color:#196cc5;
+    border: 1px solid #196cc5;
+}
+
+.auth-buttons a:hover {
+  background-color:#1abc9c;
+  color:#ffffff ;
+  font-weight: 700;
+  border: none;
+  padding: 7px 18px;
 }
 
 /* Hero Section */
 .hero {
     padding: 60px 40px;
     text-align: center;
-    background-color: #4499ee;
+    /* background-color: #196cc5; */
+    background: linear-gradient(5deg,#2564ba  1%, #a3c4e7 10%, #196cc5 50%);
     display: flex;
     justify-content: space-between;
 }
@@ -86,6 +101,9 @@ nav a {
     font-size: 18px;
 }
 
+.logo image{
+     box-shadow: 0 0 8px 8px black inset;
+}
 .content{
     width: 30%;
     text-align:left;
@@ -94,19 +112,24 @@ nav a {
 .learn-more {
     display: inline-block;
     padding: 12px 30px;
-    background-color: green;
+    background-color: #1abc9c;
     color: white;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 8px;
     font-weight: 600;
     margin: 20px 0;
+}
+
+.learn-more:hover{
+     background-color:  #fff;
+     color: #1abc9c;
 }
 
 
 /* Mission/Vision Sections */
 .mission, .vision {
     padding: 80px 40px;
-    color: #333; 
+    color:#1f1f1f ; 
     display: flex;
     gap: 20px;
     
@@ -153,7 +176,7 @@ nav a {
 .story {
     background-color: #f8f9fa;
     padding: 80px 40px;
-    color: #333; 
+    color: #1f1f1f; 
     display: flex;
     gap: 50px;
 }
@@ -165,7 +188,7 @@ margin: auto auto;
 .mission h1, .vision h1, .story h1 {
     font-size: 36px;
     margin-bottom: 30px;
-    color: #2a7fba;
+    color: #196cc5;
     font-weight: 700;
 }
 
@@ -194,7 +217,7 @@ margin: auto auto;
 .services {
     padding: 80px 40px;
     background-color: #f8f9fa;
-    color: black;
+    color:#1f1f1f;
 }
 
 .services h1 {
@@ -227,9 +250,9 @@ margin: auto auto;
 }
 
 .service-card h3 {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 15px;
-    color: #0a0a0a;
+    color: #1f1f1f;
 }
 
 .service-card p {
@@ -242,7 +265,7 @@ margin: auto auto;
 .stats {
     padding: 50px 40px;
     text-align: center;
-    background-color: #2a7fba;
+    background-color:#196cc5;
 }
 
 .stats-grid {
@@ -266,14 +289,14 @@ margin: auto auto;
 
 .stat-label {
     font-size: 18px;
-    color:#fff;
+    color:#f8f9fa;
 }
 
 /* Subscribe Section */
 .subscribe {
     padding: 40px 40px; 
     background-color: #f8f9fa;
-    color: rgb(31, 30, 30);
+    color:#1f1f1f ;
     text-align: center;
 }
 
@@ -306,17 +329,22 @@ margin: auto auto;
     padding: 15px 40px;
     border: none;
     font-weight: 600;
-    background-color: #00e676;
+    background-color: #1abc9c;
     color: #fff;
     border-radius: 10px;
     cursor: pointer;
 }
 
+.subscribe-form button[type="submit"]:hover{
+     background-color:  #fff;
+     color: #1abc9c;
+}
+
 /* Footer */
 footer {
-    background-color: #2a7fba;
+    background-color: #196cc5;
     color: white;
-    padding: 60px 40px 30px;
+    padding: 40px 40px 30px;
 }
 
 .footer-grid {
@@ -332,8 +360,8 @@ footer {
 }
 
 .footer-about h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 10px;
     color: #fff;
 }
 
@@ -343,9 +371,13 @@ footer {
     text-align: left;
 }
 
+.footer-about span {
+  color: #1ae5bd;
+}
+
 .footer-links h3 {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin:15px 0px;
     color: #fff;
 }
 
@@ -363,6 +395,10 @@ footer {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
+}
+
+.footer-links a:hover {
+    color:#1abc9c;
 }
 
 
