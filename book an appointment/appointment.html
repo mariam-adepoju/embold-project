@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,18 +15,23 @@
       src="https://kit.fontawesome.com/4cea918ca9.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>ClinicCue</title>
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="logo">
-          <img src="images/ClinicCue.png" alt="logo" />
+          <img src="../images/ClinicCue.png" alt="logo" />
         </div>
         <div class="nav-container">
           <div class="nav-links">
-            <a href="index.html"><span>Home</span></a>
-            <a href="#"><span>About Us</span></a>
+            <a href="../index.html"><span>Home</span></a>
+            <a href="../About-Us/about.html"><span>About Us</span></a>
             <a href="#"><span>Our Service</span></a>
             <a href="#"><span>Contact Us</span></a>
           </div>
@@ -69,7 +74,145 @@
         </div>
       </nav>
     </header>
-
+    <section class="hero">
+      <div class="overlay">
+        <h1>Book the Best Doctor</h1>
+        <p>Meet with our Experts</p>
+        <div class="search-box">
+          <h3>Book a Doctor</h3>
+          <p>Examinaton or Procedure</p>
+          <hr />
+          <form>
+            <div>
+              <select>
+                <option>Select a speciality</option>
+              </select>
+            </div>
+            <div>
+              <select>
+                <option>In this state</option>
+              </select>
+            </div>
+            <div class="">
+              <select>
+                <option>In this city</option>
+              </select>
+            </div>
+            <div>
+              <select>
+                <option>Or search by name</option>
+              </select>
+            </div>
+            <button class="btn-primary">Book</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="specialties">
+      <h2>Book from top specialties</h2>
+      <div class="slider-container swiper">
+        <div class="slider-wrapper">
+          <div class="swiper-wrapper">
+            <div class="card swiper-slide">
+              <img src="../images/skin.png" alt="" />
+              <p>Skin</p>
+            </div>
+            <div class="card swiper-slide">
+              <img src="../images/teeth.png" alt="" />
+              <p>Teeth</p>
+            </div>
+            <div class="card swiper-slide">
+              <img src="../images/mental health.png" alt="" />
+              <p>Mental, Emotional</p>
+            </div>
+            <div class="card swiper-slide">
+              <img src="../images/child.png" alt="" />
+              <p>Child</p>
+            </div>
+          </div>
+          <div class=".slide-button swiper-button-prev"></div>
+          <div class=".slide-button swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <section class="tags">
+      <div class="left">
+        <h4>Choose and book from top specialities</h4>
+        <div class="left-tags">
+          <button>Dermatologist</button>
+          <button>Dentist</button>
+          <button>Psychiatrist</button>
+          <button>Pediatrician</button>
+          <button>Neurologist</button>
+          <button>Orthopedist</button>
+          <button>Gynecologist</button>
+          <button>ENT Doctor</button>
+          <button>Cardiologist</button>
+          <button>View More...</button>
+        </div>
+      </div>
+      <div class="right">
+        <h4>Choose and book from top states</h4>
+        <div class="right-tags">
+          <button>Lagos</button>
+          <button>Rivers</button>
+          <button>View More...</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <ul class="clinic">
+          <l1>
+            <h2 class="title">Clinic<span>Cue</span></h2>
+            <p>
+              Connecting you with trusted doctors and specialist. ClinicCue
+              makes hopital appointments faster, easier all from one smart
+              platforms
+            </p>
+          </l1>
+          <li>
+            <i class="fa-solid fa-location-crosshairs"></i
+            ><span>26, Queens Avenue</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i><span>example@gmail.com</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i><span>+234 891 334 3678</span>
+          </li>
+        </ul>
+        <ul>
+          <li>Quick Link</li>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Our Service</li>
+          <li>Contact Us</li>
+        </ul>
+        <ul class="">
+          <li>Service</li>
+          <li>Book a Doctor</li>
+          <li>Browse Specialists</li>
+          <li>Health Articles</li>
+          <li>FAQs</li>
+        </ul>
+        <ul>
+          <li>Support</li>
+          <li>FAQs</li>
+          <li>Support Center</li>
+          <li>Contact Us</li>
+        </ul>
+        <ul>
+          <li>Follow Us</li>
+          <li>
+            <span><i class="fa-brands fa-facebook"></i></span>
+            <span><i class="fa-brands fa-instagram"></i></span>
+            <span><i class="fa-brands fa-twitter"></i></span>
+            <span><i class="fa-brands fa-linkedin"></i></span>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="../script.js"></script>
   </body>
 </html>
